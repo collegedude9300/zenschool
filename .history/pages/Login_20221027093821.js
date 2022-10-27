@@ -78,9 +78,9 @@ export default function Login() {
               <button type="submit" className="btn btn-primary">Submit</button>
             </form>
         </div>
-        <Link href="/" className="btn btn-success"> 
-        Home
+        <Link href="/"> 
+        <a className="btn btn-success">Home</a>
         </Link>
       </main>
       </div>
-  );}
+  )}

@@ -10,7 +10,7 @@ export default function Login() {
   }
 
   const validateFirstName = (firstName) => {
-    const re = /^[a-zA-Z]+$/;
+    const re = /^[A-Z]+$/;
     return re.test(String(firstName).toLowerCase());
   }
   //check to see if your last name is valid

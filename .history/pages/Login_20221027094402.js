@@ -7,7 +7,7 @@ export default function Login() {
   const validateEmail = (email) => {
     const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-1]\d{1,2}\.[0-1]\d{1,2}\.[0-1]\d{1,2}\.[0-1]\d{1,2}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(String(email).toLowerCase());
-  }
+  }a
 
   const validateFirstName = (firstName) => {
     const re = /^[a-zA-Z]+$/;
@@ -78,9 +78,9 @@ export default function Login() {
               <button type="submit" className="btn btn-primary">Submit</button>
             </form>
         </div>
-        <Link href="/" className="btn btn-success"> 
-        Home
+        <Link href="/"> 
+        <a className="btn btn-success">Home</a>
         </Link>
       </main>
       </div>
-  );}
+  )}

@@ -25,28 +25,28 @@ export default function Home() {
 
 
         <div className={styles.grid}>
-        <Link href="/About">
-          <a className="btn btn-success">About Me</a>
+        <Link href="/About" className="btn btn-success">
+          About Me
         </Link>
         <h4> Nature and Enlightenment: </h4>
         <Image  alt="A small purple flower ."src="/flower.jpg" width="200" height="200"/>
         <br/>
         <Image  alt="An animated blue cat."src="/cartooncat.png" width="200" height="200"/>
         <br/>
-        <Link href="/MenuNature">
-          <a className="btn btn-success">Menu for the Nature site</a>
+        <Link href="/MenuNature" className="btn btn-success">
+          Menu for the Nature site
         </Link>
         <h4> Quotes: </h4>
         <Image alt="asdf" src="/quotes.png" width="200" height="200"/>
         <br/>
-        <Link href="/Quotes">
-          <a className="btn btn-success">Quotes</a>
+        <Link href="/Quotes" className="btn btn-success">
+          Quotes
         </Link>
         <h4>Contact Me: </h4>
         <Image  alt="A yellow sticky note saying Call Me."src="/contact.png" width="200" height="200"/> 
         <br/>
-        <Link href="/Contact">
-          <a className="btn btn-success">Contact Me</a>
+        <Link href="/Contact" className="btn btn-success">
+          Contact Me
         </Link>
         </div>
       </main>
@@ -64,5 +64,5 @@ export default function Home() {
         </a>
       </footer>
     </div>
-  )
+  );
 }
