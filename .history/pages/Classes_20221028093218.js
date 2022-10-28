@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 import Link from 'next/link';
 export default function Classes() {
   return (
+
     <div className={styles.container}>
       <Head>
         <title>Classes</title>
