@@ -19,7 +19,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #67ff02;
+  background-color: #39ec16;
 }
 .gened {
   min-height: 100vh;
@@ -39,7 +39,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #ffc400;
+  background-color: #ff9900;
 }
 .footer {
   display: flex;
