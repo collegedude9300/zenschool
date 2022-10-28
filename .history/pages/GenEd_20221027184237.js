@@ -2,7 +2,6 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import 'bootstrap/dist/css/bootstrap.css'
-import Link from 'next/link';
 export default function GenEd() {
 return(
 //class choices form
@@ -72,20 +71,7 @@ GenEd:
 <label for="History 111"> History 111</label><br/>
 <input type="checkbox" id="Pol-Science 101" name="Pol-Science 101" value="Pol-Science 101"/>
 <label for="Pol-Science 101"> Political Science 101</label><br/>
-<br/>
-<h4>General Ed Group F: Science </h4>
-<input type="checkbox" id="Science 100" name="Science 100" value="Science 100"/>
-<label for="Science 100"> Science 100</label><br/>
-<input type="checkbox" id="Science 101" name="Science 101" value="Science 101"/>
-<label for="Science 101"> Science 101</label><br/>
-<input type="checkbox" id="Science 102" name="Science 102" value="Science 102"/>
-<label for="Science 102"> Science 102</label><br/>
-<br/>
-<button type="submit" className="btn btn-primary">Submit</button>
 </form>
-<Link legacyBehavior href="/"> 
-        <a className="btn btn-success">Home</a>
-        </Link>
 </main>
       </div>
 )}

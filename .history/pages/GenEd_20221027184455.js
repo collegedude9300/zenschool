@@ -2,7 +2,6 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import 'bootstrap/dist/css/bootstrap.css'
-import Link from 'next/link';
 export default function GenEd() {
 return(
 //class choices form
@@ -83,9 +82,6 @@ GenEd:
 <br/>
 <button type="submit" className="btn btn-primary">Submit</button>
 </form>
-<Link legacyBehavior href="/"> 
-        <a className="btn btn-success">Home</a>
-        </Link>
 </main>
       </div>
 )}
