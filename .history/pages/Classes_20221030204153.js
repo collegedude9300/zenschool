@@ -56,13 +56,13 @@ export default function Classes() {
     <li> History 110: Ancient US History (3 units) </li>
     <li> History 111: Modern US History (3 units) </li>
     <h5> Group C:</h5>
-    <li> Political Science 100: Introduction to Political Science (3 units) </li>
+    <li> Political Science 100: Introduction to Political Science </li>
     </ul>
     <ul>
     <h4>General Ed Group F: Science </h4>
-    <li> Bio 100: General Biology (with lab) (4 units) </li>
-    <li> Chemistry 100: General Chemistry (with lab) (4 units)</li>
-    <li> Zoology 100: General Zoology (with lab) (4 units)</li>
+    <li> Bio 100: General Biology (with lab) </li>
+    <li> Chemistry 100: General Chemistry (with lab)</li>
+    <li> Zoology 101: General Zoology (with lab)</li>
     </ul>
     <Link legacyBehavior href="/"> 
         <a className="btn btn-success">Home</a>

@@ -66,23 +66,23 @@ GenEd:
 <br/>
 <h4>General Ed Group E: History </h4>
 <input type="checkbox" id="History 100" name="History 100" value="History 100"/>
-<label for="History 100"> History 100: Pre World History</label><br/>
+<label for="History 100"> History 100</label><br/>
 <input type="checkbox" id="History 101" name="History 101" value="History 101"/>
-<label for="History 101"> History 101: Modern World History</label><br/>
+<label for="History 101"> History 101</label><br/>
 <input type="checkbox" id="History 110" name="History 110" value="History 110"/>
-<label for="History 110"> History 110: Pre US History</label><br/>
+<label for="History 110"> History 110</label><br/>
 <input type="checkbox" id="History 111" name="History 111" value="History 111"/>
-<label for="History 111"> History 111: Modern History</label><br/>
-<input type="checkbox" id="Pol-Science 100" name="Pol-Science 100" value="Pol-Science 100"/>
-<label for="Pol-Science 100"> Political Science 100: Introduction to Political Science</label><br/>
+<label for="History 111"> History 111</label><br/>
+<input type="checkbox" id="Pol-Science 101" name="Pol-Science 101" value="Pol-Science 101"/>
+<label for="Pol-Science 101"> Political Science 101</label><br/>
 <br/>
 <h4>General Ed Group F: Science </h4>
-<input type="checkbox" id="Bio 100" name="Bio 100" value="Bio 100"/>
-<label for="Bio 100"> Bio 100: Introduction to Bio</label><br/>
-<input type="checkbox" id="Chemistry 100" name="Chemistry 100" value="Chemistry 100"/>
-<label for="Chemistry 100"> Chemistry 100: Introduction to Chemistry</label><br/>
-<input type="checkbox" id="Zoology 100" name="Zoology 100" value="Zoology 100"/>
-<label for="Zoology 100"> Zoology 100: Introduction to Zoology</label><br/>
+<input type="checkbox" id="Science 100" name="Science 100" value="Science 100"/>
+<label for="Science 100"> Science 100</label><br/>
+<input type="checkbox" id="Science 101" name="Science 101" value="Science 101"/>
+<label for="Science 101"> Science 101</label><br/>
+<input type="checkbox" id="Science 102" name="Science 102" value="Science 102"/>
+<label for="Science 102"> Science 102</label><br/>
 <br/>
 <button type="submit" className="btn btn-primary">Submit</button>
 </form>

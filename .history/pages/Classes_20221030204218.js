@@ -62,7 +62,7 @@ export default function Classes() {
     <h4>General Ed Group F: Science </h4>
     <li> Bio 100: General Biology (with lab) (4 units) </li>
     <li> Chemistry 100: General Chemistry (with lab) (4 units)</li>
-    <li> Zoology 100: General Zoology (with lab) (4 units)</li>
+    <li> Zoology 101: General Zoology (with lab) (4 units)</li>
     </ul>
     <Link legacyBehavior href="/"> 
         <a className="btn btn-success">Home</a>
