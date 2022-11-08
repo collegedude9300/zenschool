@@ -51,6 +51,11 @@ const validateZipCode = (zipCode) => {
   const re = /^\d{5}$/;
   return re.test(String(zipCode));
 }
+//validate Country
+const validateCountry = (country) => {
+  const re = /^[a-zA-Z\s,.'-]{3,}$/;
+  return re.test(String(country));
+}
 //validate Date of Birth
 const validateDateOfBirth = (dateOfBirth) => {
   const re = /^\d{4}-\d{2}-\d{2}$/;
@@ -67,6 +72,7 @@ const handleSubmit = (e) => {
   const city = document.getElementById("city").value;
   const state = document.getElementById("state").value;
   const zipCode = document.getElementById("zipCode").value;
+  const country = document.getElementById("country").value;
   const dateOfBirth = document.getElementById("dateOfBirth").value;
   const password = document.getElementById("password").value;
   const confirmPassword = document.getElementById("confirmPassword").value;
@@ -89,6 +95,10 @@ return (
         Sign Up
       </h1>
       <form onSubmit={handleSubmit}>
+        <div className="form-group"> 
+          <label htmlFor="email">Email</label>
+          <input type="email" className="form-control" id="email" placeholder="Enter email" required/>
+        </div>
         <div className="form-group">
           <label htmlFor="firstName">First Name</label>
           <input type="text" className="form-control" id="firstName" placeholder="Enter first name" required/>
@@ -97,21 +107,9 @@ return (
           <label htmlFor="lastName">Last Name</label>
           <input type="text" className="form-control" id="lastName" placeholder="Enter last name" required/>
         </div>
-        <div className="form-group"> 
-          <label htmlFor="email">Email</label>
-          <input type="email" className="form-control" id="email" placeholder="Enter email" required/>
-        </div>
         <div className="form-group">
           <label htmlFor="phoneNumber">Phone Number</label>
           <input type="tel" className="form-control" id="phoneNumber" placeholder="Enter phone number" required/>
-        </div>
-        <div className="form-group">
-          <label htmlFor="password">Password</label>
-          <input type="password" className="form-control" id="password" placeholder="Enter password" required/>
-        </div>
-        <div className="form-group">
-          <label htmlFor="confirmPassword">Confirm Password</label>
-          <input type="password" className="form-control" id="confirmPassword" placeholder="Confirm password" required/>
         </div>
         <div className="form-group">
           <label htmlFor="address">Address</label>
@@ -130,8 +128,20 @@ return (
           <input type="text" className="form-control" id="zipCode" placeholder="Enter zip code" required/>
         </div>
         <div className="form-group">
+          <label htmlFor="country">Country</label>
+          <input type="text" className="form-control" id="country" placeholder="Enter country" required/>
+        </div>
+        <div className="form-group">
           <label htmlFor="dateOfBirth">Date of Birth</label>
           <input type="date" className="form-control" id="dateOfBirth" placeholder="Enter date of birth" required/>
+        </div>
+        <div className="form-group">
+          <label htmlFor="password">Password</label>
+          <input type="password" className="form-control" id="password" placeholder="Enter password" required/>
+        </div>
+        <div className="form-group">
+          <label htmlFor="confirmPassword">Confirm Password</label>
+          <input type="password" className="form-control" id="confirmPassword" placeholder="Confirm password" required/>
         </div>
         <button type="submit" className="btn btn-primary">Submit</button>
       </form>
@@ -140,4 +150,5 @@ return (
         <a className="btn btn-success">Home</a>
         </Link>
   </div>
-)}
+);
+}

@@ -51,6 +51,11 @@ const validateZipCode = (zipCode) => {
   const re = /^\d{5}$/;
   return re.test(String(zipCode));
 }
+//validate Country
+const validateCountry = (country) => {
+  const re = /^[a-zA-Z\s,.'-]{3,}$/;
+  return re.test(String(country));
+}
 //validate Date of Birth
 const validateDateOfBirth = (dateOfBirth) => {
   const re = /^\d{4}-\d{2}-\d{2}$/;
@@ -67,6 +72,7 @@ const handleSubmit = (e) => {
   const city = document.getElementById("city").value;
   const state = document.getElementById("state").value;
   const zipCode = document.getElementById("zipCode").value;
+  const country = document.getElementById("country").value;
   const dateOfBirth = document.getElementById("dateOfBirth").value;
   const password = document.getElementById("password").value;
   const confirmPassword = document.getElementById("confirmPassword").value;
@@ -128,6 +134,10 @@ return (
         <div className="form-group">
           <label htmlFor="zipCode">Zip Code</label>
           <input type="text" className="form-control" id="zipCode" placeholder="Enter zip code" required/>
+        </div>
+        <div className="form-group">
+          <label htmlFor="country">Country</label>
+          <input type="text" className="form-control" id="country" placeholder="Enter country" required/>
         </div>
         <div className="form-group">
           <label htmlFor="dateOfBirth">Date of Birth</label>
