@@ -31,6 +31,11 @@ const validateCity = (city) => {
   const re = /^[a-zA-Z\s,.'-]{3,}$/;
   return re.test(String(city));
 }
+//validate State
+const validateState = (state) => {
+  const re = /^[a-zA-Z\s,.'-]{3,}$/;
+  return re.test(String(state));
+}
 //validate Zip Code
 const validateZipCode = (zipCode) => {
   const re = /^\d{5}$/;

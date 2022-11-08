@@ -31,6 +31,11 @@ const validateCity = (city) => {
   const re = /^[a-zA-Z\s,.'-]{3,}$/;
   return re.test(String(city));
 }
+//validate State
+const validateState = (state) => {
+  const re = /^[a-zA-Z\s,.'-]{3,}$/;
+  return re.test(String(state));
+}
 //validate Zip Code
 const validateZipCode = (zipCode) => {
   const re = /^\d{5}$/;
@@ -78,6 +83,9 @@ const handleSubmit = (e) => {
   else if (!validateCity(city)) {
     alert("Please enter a valid city");
   }
+  else if (!validateState(state)) {
+    alert("Please enter a valid state");
+  }
   else if (!validateZipCode(zipCode)) {
     alert("Please enter a valid zip code");
   }
@@ -124,7 +132,7 @@ return (
           <input type="text" className="form-control" id="city" placeholder="Enter city" required/>
         </div>
         <div className="form-group">
-          <label htmlFor="state">State (select below)</label>
+          <label htmlFor="state">State</label>
           <select className="form-control" id="state">
             <option value="AL">Alabama</option>
             <option value="AK">Alaska</option>
@@ -178,7 +186,6 @@ return (
             <option value="WI">Wisconsin</option>
             <option value="WY">Wyoming</option>
           </select>
-        </div>
         <div className="form-group">
           <label htmlFor="zipCode">Zip Code</label>
           <input type="text" className="form-control" id="zipCode" placeholder="Enter zip code" required/>
