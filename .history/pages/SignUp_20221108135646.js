@@ -6,12 +6,17 @@ import 'bootstrap/dist/css/bootstrap.css'
 import Link from 'next/link';
 export default function SignUp()
 {
+//validate Password
+const validatePassword = (password) => {
+  const re = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/;
+  return re.test(String(password));
+}
 //validate Email
 const validateEmail = (email) => {
   const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-1]\d{1,2}\.[0-1]\d{1,2}\.[0-1]\d{1,2}\.[0-1]\d{1,2}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   return re.test(String(email).toLowerCase());
 }
-//validate First Name
+//validate  Name
 const validateName = (name) => {
   const re = /^[A-Z][a-z]+(\s|,)[A-Z][a-z]{1,19}$/;
   return re.test(String(name));
@@ -57,7 +62,9 @@ const handleSubmit = (e) => {
   const state = document.getElementById("state").value;
   const zipCode = document.getElementById("zipCode").value;
   const dateOfBirth = document.getElementById("dateOfBirth").value;
-  if (validateEmail(email) && validateName(name) && validatePhoneNumber(phoneNumber) && validateAddress(address) && validateCity(city) && validateState(state) && validateZipCode(zipCode)  && validateDateOfBirth(dateOfBirth)) {
+  const password = document.getElementById("password").value;
+  const confirmPassword = document.getElementById("confirmPassword").value;
+  if (validateEmail(email) && validateName(name) && validatePhoneNumber(phoneNumber) && validateAddress(address) && validateCity(city) && validateState(state) && validateZipCode(zipCode)  && validateDateOfBirth(dateOfBirth) && validatePassword(password) && password === confirmPassword) {
     document.getElementById("email").value = "";
     document.getElementById("name").value = "";
     document.getElementById("phoneNumber").value = "";
@@ -66,6 +73,8 @@ const handleSubmit = (e) => {
     document.getElementById("state").value = "";
     document.getElementById("zipCode").value = "";
     document.getElementById("dateOfBirth").value = "";
+    document.getElementById("password").value = "";
+    document.getElementById("confirmPassword").value = "";
     alert("Thank you for signing up!");
   }
   else if (!validateName(name)) {
@@ -76,6 +85,12 @@ const handleSubmit = (e) => {
   }
   else if (!validatePhoneNumber(phoneNumber)) {
     alert("Please enter a valid phone number");
+  }
+  else if (!validatePassword(password)) {
+    alert("Please enter a valid password. It must contain a capital letter, and a number");
+  }
+  else if (password !== confirmPassword) {
+    alert("Passwords do not match");
   }
   else if (!validateAddress(address)) {
     alert("Please enter a valid address");
@@ -122,6 +137,14 @@ return (
         <div className="form-group">
           <label htmlFor="phoneNumber">Phone Number</label>
           <input type="tel" className="form-control" id="phoneNumber" placeholder="Enter phone number" required/>
+        </div>
+        <div className="form-group">
+          <label htmlFor="password">Password</label>
+          <input type="password" className="form-control" id="password" placeholder="Enter password" required/>
+        </div>
+        <div className="form-group">
+          <label htmlFor="confirmPassword">Confirm Password</label>
+          <input type="password" className="form-control" id="confirmPassword" placeholder="Confirm password" required/>
         </div>
         <div className="form-group">
           <label htmlFor="address">Address</label>

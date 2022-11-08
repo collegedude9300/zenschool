@@ -52,7 +52,7 @@ export default function Login() {
             <form onSubmit={handleSubmit}>
             <br></br>
               <div className="form-group">
-              <label htmlFor="name">Full Name</label>
+              <label htmlFor="name">First Name</label>
 			<input type="text" name="name" id="name" placeholder=""/> 
       <br></br>
       <br></br>

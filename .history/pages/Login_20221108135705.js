@@ -12,24 +12,30 @@ export default function Login() {
     const re = /^[A-Z][a-z]+(\s|,)[A-Z][a-z]{1,19}$/;
     return re.test(String(name));
   }
+
+
 //check to see if the email is valid
   const handleSubmit = (e) => {
     e.preventDefault();
     const email = document.getElementById("email").value;
-    const name = document.getElementById("name").value;
-
-    if (validateEmail(email) && validateName(name)) 
+    const firstName = document.getElementById("firstName").value;
+    const lastName = document.getElementById("lastName").value;
+    if (validateEmail(email) && validateFirstName(firstName) && validateLastName(lastName)) 
     {
       document.getElementById("email").value = "";
-      document.getElementById("name").value = "";
+      document.getElementById("firstName").value = "";
+      document.getElementById("lastName").value = "";
       alert("Form submitted successfully");
     }
     else if (!validateEmail(email)) {
       alert("Please enter a valid email address");
     }
-    else if (!validateName(name)) {
-      alert("Please enter a valid  name");
+    else if (!validateFirstName(firstName)) {
+      alert("Please enter a valid first name");
     }
+    else if (!validateLastName(lastName)) {
+      alert("Please enter a valid last name");
+    } 
     else 
     {
       alert("Form not submitted correctly, please fix your errors");
@@ -52,8 +58,12 @@ export default function Login() {
             <form onSubmit={handleSubmit}>
             <br></br>
               <div className="form-group">
-              <label htmlFor="name">Full Name</label>
-			<input type="text" name="name" id="name" placeholder=""/> 
+              <label htmlFor="firstName">First Name</label>
+			<input type="text" name="firstName" id="firstName" placeholder=""/> 
+      <br></br>
+      <br></br>               
+			<label htmlFor="lastName">Last Name</label>
+			<input type="text" name="lastName" id="lastName" placeholder=""/> 
       <br></br>
       <br></br>
                 <label htmlFor="email">Email address</label>

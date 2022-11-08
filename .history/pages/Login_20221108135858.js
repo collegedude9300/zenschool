@@ -12,13 +12,15 @@ export default function Login() {
     const re = /^[A-Z][a-z]+(\s|,)[A-Z][a-z]{1,19}$/;
     return re.test(String(name));
   }
+
+
 //check to see if the email is valid
   const handleSubmit = (e) => {
     e.preventDefault();
     const email = document.getElementById("email").value;
     const name = document.getElementById("name").value;
 
-    if (validateEmail(email) && validateName(name)) 
+    if (validateEmail(email) && validateFirstName(name)) 
     {
       document.getElementById("email").value = "";
       document.getElementById("name").value = "";
@@ -27,8 +29,8 @@ export default function Login() {
     else if (!validateEmail(email)) {
       alert("Please enter a valid email address");
     }
-    else if (!validateName(name)) {
-      alert("Please enter a valid  name");
+    else if (!validateFirstName(name)) {
+      alert("Please enter a valid first name");
     }
     else 
     {
@@ -52,7 +54,7 @@ export default function Login() {
             <form onSubmit={handleSubmit}>
             <br></br>
               <div className="form-group">
-              <label htmlFor="name">Full Name</label>
+              <label htmlFor="name">First Name</label>
 			<input type="text" name="name" id="name" placeholder=""/> 
       <br></br>
       <br></br>
