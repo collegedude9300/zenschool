@@ -5,7 +5,6 @@ import 'bootstrap/dist/css/bootstrap.css'
 import Link from 'next/link';
 export default function GenEd() {
 return(
-//class choices form
 <div className={styles.container}>
 <Head>
 <title>GenEd</title>

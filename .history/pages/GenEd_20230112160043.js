@@ -5,7 +5,6 @@ import 'bootstrap/dist/css/bootstrap.css'
 import Link from 'next/link';
 export default function GenEd() {
 return(
-//class choices form
 <div className={styles.container}>
 <Head>
 <title>GenEd</title>
@@ -77,11 +76,11 @@ GenEd:
 <label for="Pol-Science 100"> Political Science 100: Introduction to Political Science</label><br/>
 <br/>
 <h4>General Ed Group F: Science </h4>
-<input type="checkbox" id="Bio 100" name="Bio 100" value="Bio 100"/>
+<input type="radio" id="Bio 100" name="Bio 100" value="Bio 100"/>
 <label for="Bio 100"> Bio 100: Introduction to Bio</label><br/>
-<input type="checkbox" id="Chemistry 100" name="Chemistry 100" value="Chemistry 100"/>
+<input type="radio" id="Chemistry 100" name="Chemistry 100" value="Chemistry 100"/>
 <label for="Chemistry 100"> Chemistry 100: Introduction to Chemistry</label><br/>
-<input type="checkbox" id="Zoology 100" name="Zoology 100" value="Zoology 100"/>
+<input type="radio" id="Zoology 100" name="Zoology 100" value="Zoology 100"/>
 <label for="Zoology 100"> Zoology 100: Introduction to Zoology</label><br/>
 <br/>
 <button type="submit" className="btn btn-primary">Submit</button>
