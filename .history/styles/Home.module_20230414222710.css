@@ -1,5 +1,5 @@
 .container {
-  padding: 0 2rem;
+  padding: 0 1rem;
 }
 .main {
   min-height: 100vh;
@@ -19,7 +19,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #35d415;
+  background-color: #67ff02;
 }
 .gened {
   min-height: 100vh;
@@ -39,7 +39,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #ff9900;
+  background-color: #ffc400;
 }
 .footer {
   display: flex;

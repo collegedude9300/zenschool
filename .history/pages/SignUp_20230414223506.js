@@ -189,9 +189,11 @@ return (
         </div>
         <button type="submit" className="btn btn-primary">Submit</button>
       </form>
+
+      
+    </main>
       <Link legacyBehavior href="/"> 
         <a className="btn btn-success">Home</a>
         </Link>
-    </main>
   </div>
 )}

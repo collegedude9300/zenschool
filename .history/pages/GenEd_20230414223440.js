@@ -15,73 +15,73 @@ return(
 <h1 className={styles.title}>
 GenEd:
 </h1>
-<form>
+<form> 
 <h4>General Ed Group A: English and Communication Group </h4>
 <p> Part 1: Written Composition</p>
 <input type="radio" id="English 100" name="English 100" value="English 100"/>
-<label for="English 100"> English 100: General English </label><br/>
+<labelhtmlFor="English 100"> English 100: General English </label><br/>
 <p>Part 2: Reading Composition</p>
 <input type="radio" id="English 101" name="English 101" value="English 101"/>
-<label for="English 101"> English 101: College Reading</label><br/>
+<labelhtmlFor="English 101"> English 101: College Reading</label><br/>
 <p>Part 3: Oral Communication</p>
 <input type="radio" id="Communication 101" name="Communication 101" value="Communication 101"/>
-<label for="Communication 101"> Communication 101: Oral Communication</label><br/>
+<label htmlFor="Communication 101"> Communication 101: Oral Communication</label><br/>
 <br/>
 <h4>General Ed Group B: Math </h4>
 <input type="checkbox" id="Math 100" name="Math 100" value="Math 100"/>
-<label for="Math 100"> Math 100: College Algebra</label><br/>
+<label htmlFor="Math 100"> Math 100: College Algebra</label><br/>
 <input type="checkbox" id="Math 103" name="Math 103" value="Math 103"/>
-<label for="Math 103"> Math 103: Statistics</label><br/>
+<label htmlFor="Math 103"> Math 103: Statistics</label><br/>
 <input type="checkbox" id="Math 104" name="Math 104" value="Math 104"/>
-<label for="Math 104"> Math 104: Buisness and Consumer Math</label><br/>
+<label htmlFor="Math 104"> Math 104: Buisness and Consumer Math</label><br/>
 <input type="checkbox" id="Math 130" name="Math 130" value="Math 130"/>
-<label for="Math 130"> Math 130: STEM Prep Part 1: Trigonometry</label><br/>
+<label htmlFor="Math 130"> Math 130: STEM Prep Part 1: Trigonometry</label><br/>
 <input type="checkbox" id="Math 135" name="Math 135" value="Math 135"/>
-<label for="Math 135"> Math 135:  STEM Prep Part 2: College Precalculus</label><br/>
+<label htmlFor="Math 135"> Math 135:  STEM Prep Part 2: College Precalculus</label><br/>
 <br/>
 <h4>General Ed Group C: Enlightenment </h4>
 <input type="checkbox" id="Philosophy 100" name="Philosophy 100" value="Philosophy 100"/>
-<label for="Philosophy 100"> Philosophy 100: Introduction to Philosophy</label><br/>
+<label htmlFor="Philosophy 100"> Philosophy 100: Introduction to Philosophy</label><br/>
 <input type="checkbox" id="Zen 100" name="Zen 100" value="Zen 100"/>
-<label for="Zen 100"> Zen 100: Introduction to Zen Studies</label><br/>
+<label htmlFor="Zen 100"> Zen 100: Introduction to Zen Studies</label><br/>
 <input type="checkbox" id="Zen 103" name="Zen 103" value="Zen 103"/>
-<label for="Zen 103"> Zen 103: Enlightement Techniques I</label><br/>
+<label htmlFor="Zen 103"> Zen 103: Enlightement Techniques I</label><br/>
 <input type="checkbox" id="Zen 105" name="Zen 105" value="Zen 105"/>
-<label for="Zen 105"> Zen 105: Enlightement Techniques II</label><br/>
+<label htmlFor="Zen 105"> Zen 105: Enlightement Techniques II</label><br/>
 <br/>
 <h4>General Ed Group D: Electives </h4>
 <input type="checkbox" id="Zen 108" name="Zen 108" value="Zen 108"/>
-<label for="Zen 108"> Zen 108: Yoga and Meditation</label><br/>
+<label htmlFor="Zen 108"> Zen 108: Yoga and Meditation</label><br/>
 <input type="checkbox" id="Art 100" name="Art 100" value="Art 100"/>
-<label for="Art 100"> Art 100: Introduction to Art</label><br/>
+<label htmlFor="Art 100"> Art 100: Introduction to Art</label><br/>
 <input type="checkbox" id="Art 101" name="Art 101" value="Art 101"/>
-<label for="Art 101"> Art 101: Art History</label><br/>
+<label htmlFor="Art 101"> Art 101: Art History</label><br/>
 <input type="checkbox" id="Music 113" name="Music 113" value="Music 113"/>
-<label for="Music 113"> Music 113: Survey of Music</label><br/>
+<label htmlFor="Music 113"> Music 113: Survey of Music</label><br/>
 <input type="checkbox" id="Music 114" name="Music 114" value="Music 114"/>
-<label for="Music 114"> Music 114: History of Rock & Roll</label><br/>
+<label htmlFor="Music 114"> Music 114: History of Rock & Roll</label><br/>
 <input type="checkbox" id="Film 101" name="Film 101" value="Film 101"/>
-<label for="Film 101"> Film 101: History of Film</label><br/>
+<label htmlFor="Film 101"> Film 101: History of Film</label><br/>
 <br/>
 <h4>General Ed Group E: History </h4>
 <input type="checkbox" id="History 100" name="History 100" value="History 100"/>
-<label for="History 100"> History 100: Pre World History</label><br/>
+<label htmlFor="History 100"> History 100: Pre World History</label><br/>
 <input type="checkbox" id="History 101" name="History 101" value="History 101"/>
-<label for="History 101"> History 101: Modern World History</label><br/>
+<label htmlFor="History 101"> History 101: Modern World History</label><br/>
 <input type="checkbox" id="History 110" name="History 110" value="History 110"/>
-<label for="History 110"> History 110: Pre US History</label><br/>
+<label htmlFor="History 110"> History 110: Pre US History</label><br/>
 <input type="checkbox" id="History 111" name="History 111" value="History 111"/>
-<label for="History 111"> History 111: Modern History</label><br/>
+<label htmlFor="History 111"> History 111: Modern History</label><br/>
 <input type="checkbox" id="Pol-Science 100" name="Pol-Science 100" value="Pol-Science 100"/>
-<label for="Pol-Science 100"> Political Science 100: Introduction to Political Science</label><br/>
+<label htmlFor="Pol-Science 100"> Political Science 100: Introduction to Political Science</label><br/>
 <br/>
 <h4>General Ed Group F: Science </h4>
 <input type="radio" id="Bio 100" name="Bio 100" value="Bio 100"/>
-<label for="Bio 100"> Bio 100: Introduction to Bio</label><br/>
+<label htmlFor="Bio 100"> Bio 100: Introduction to Bio</label><br/>
 <input type="radio" id="Chemistry 100" name="Chemistry 100" value="Chemistry 100"/>
-<label for="Chemistry 100"> Chemistry 100: Introduction to Chemistry</label><br/>
+<label htmlFor="Chemistry 100"> Chemistry 100: Introduction to Chemistry</label><br/>
 <input type="radio" id="Zoology 100" name="Zoology 100" value="Zoology 100"/>
-<label for="Zoology 100"> Zoology 100: Introduction to Zoology</label><br/>
+<label htmlFor="Zoology 100"> Zoology 100: Introduction to Zoology</label><br/>
 <br/>
 <button type="submit" className="btn btn-primary">Submit</button>
 </form>
