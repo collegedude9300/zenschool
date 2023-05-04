@@ -39,11 +39,10 @@ const validateZipCode = (zipCode) => {
 //validate Date of Birth
 const validateDateOfBirth = (dateOfBirth) => {
   const re = /^([0-9]{4})-([0-9]{2})-([0-9]{2})$/;
-  if (re.test(String(dateOfBirth))) 
-  {
+  if (re.test(String(dateOfBirth))) {
     const year = dateOfBirth.substring(0, 4);
     const currentYear = new Date().getFullYear();
-    if (year > currentYear - 100 && year < currentYear) {
+    if (year > currentYear - 120 && year < currentYear) {
       return true;
     }
     else {
@@ -93,6 +92,9 @@ const handleSubmit = (e) => {
   }
   else if (!validateZipCode(zipCode)) {
     alert("Please enter a valid zip code");
+  }
+  else if (!validateCountry(country)) {
+    alert("Please enter a valid country");
   }
   else if (!validateDateOfBirth(dateOfBirth)) {
     alert("Please enter a valid date of birth");

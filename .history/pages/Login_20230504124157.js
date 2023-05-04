@@ -5,42 +5,31 @@ import 'bootstrap/dist/css/bootstrap.css'
 import Link from 'next/link';
 export default function Login() {
   const validateEmail = (email) => {
-    const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-1]\d{1,2}\.[0-1]\d{1,2}\.[0-1]\d{1,2}\.[0-1]\d{1,2}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    const re = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,4}$/;
     return re.test(String(email).toLowerCase());
   }
-
-  const validateFirstName = (firstName) => {
-    const re = /^[a-zA-Z]+$/;
-    return re.test(String(firstName).toLowerCase());
+  const validateName = (name) => {
+    const re = /^[A-Z][a-z]+(\s|,)[A-Z][a-z]{1,19}$/;
+    return re.test(String(name));
   }
-  //check to see if your last name is valid
-  const validateLastName = (lastName) => {
-    const re = /^[a-zA-Z]+$/;
-    return re.test(String(lastName).toLowerCase());
-  }
-
 //check to see if the email is valid
   const handleSubmit = (e) => {
     e.preventDefault();
     const email = document.getElementById("email").value;
-    const firstName = document.getElementById("firstName").value;
-    const lastName = document.getElementById("lastName").value;
-    if (validateEmail(email) && validateFirstName(firstName) && validateLastName(lastName)) 
+    const name = document.getElementById("name").value;
+
+    if (validateEmail(email) && validateName(name)) 
     {
       document.getElementById("email").value = "";
-      document.getElementById("firstName").value = "";
-      document.getElementById("lastName").value = "";
+      document.getElementById("name").value = "";
       alert("Form submitted successfully");
     }
     else if (!validateEmail(email)) {
       alert("Please enter a valid email address");
     }
-    else if (!validateFirstName(firstName)) {
-      alert("Please enter a valid first name");
+    else if (!validateName(name)) {
+      alert("Please enter a valid  name");
     }
-    else if (!validateLastName(lastName)) {
-      alert("Please enter a valid last name");
-    } 
     else 
     {
       alert("Form not submitted correctly, please fix your errors");
@@ -55,7 +44,7 @@ export default function Login() {
         <link rel="icon" href="/favicon.png" />
       </Head>
 
-      <main className={styles.main}>
+      <main className={styles.login}>
         <h1 className={styles.title}>
           Contact Me:
         </h1>
@@ -63,12 +52,8 @@ export default function Login() {
             <form onSubmit={handleSubmit}>
             <br></br>
               <div className="form-group">
-              <label htmlFor="firstName">First Name</label>
-			<input type="text" name="firstName" id="firstName" placeholder=""/> 
-      <br></br>
-      <br></br>               
-			<label htmlFor="lastName">Last Name</label>
-			<input type="text" name="lastName" id="lastName" placeholder=""/> 
+              <label htmlFor="name">Full Name</label>
+			<input type="text" name="name" id="name" placeholder=""/> 
       <br></br>
       <br></br>
                 <label htmlFor="email">Email address</label>

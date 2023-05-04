@@ -50,6 +50,7 @@ const validateDateOfBirth = (dateOfBirth) => {
       return false;
     }
   }
+  document.write("ASDFASDFASDF");
   else {
     return false;
   }

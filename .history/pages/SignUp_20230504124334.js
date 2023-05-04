@@ -45,6 +45,7 @@ const validateDateOfBirth = (dateOfBirth) => {
     const currentYear = new Date().getFullYear();
     if (year > currentYear - 100 && year < currentYear) {
       return true;
+      document.write("ASDFASDFASDF");
     }
     else {
       return false;

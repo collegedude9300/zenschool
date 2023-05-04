@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 import Link from 'next/link';
 export default function Login() {
   const validateEmail = (email) => {
-    const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-1]\d{1,2}\.[0-1]\d{1,2}\.[0-1]\d{1,2}\.[0-1]\d{1,2}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    const re = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,4}$/;
     return re.test(String(email).toLowerCase());
   }
   const validateName = (name) => {
