@@ -1,4 +1,5 @@
 import Link from 'next/link';
+/* eslint-disable @next/next/no-html-link-for-pages */
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import 'bootstrap/dist/css/bootstrap.css'
@@ -17,27 +18,23 @@ export default function Home() {
         </h1>
         <div className={styles.grid}>
           <div className={styles.card}>
-          <Link href="/SignUp" passHref>
+          <Link href="/SignUp" passHref> Signup</Link>
               <h2>Sign Up &rarr;</h2>
-              </Link>
               <p>Sign up to enroll in classes.</p>
           </div>
           <div className={styles.card}>
-          <Link href="/Login" passHref>
+          <Link href="/Login" passHref></Link>
               <h2>Login &rarr;</h2>
-              </Link>
               <p>If you have an account already, log in.</p>
             </div>
             <div className={styles.card}>
-          <Link href="/Classes" passHref>
+          <Link href="/Classes" passHref></Link>
               <h2>Classes &rarr;</h2>
-              </Link>
               <p>List of different classes</p>
             </div>
             <div className={styles.card}>
-          <Link href="/GenEd" passHref>
+          <Link href="/GenEd" passHref></Link>
               <h2>Gen Ed Form &rarr;</h2>
-              </Link>
               <p>Gen ed form</p>   
               </div>
         </div>
