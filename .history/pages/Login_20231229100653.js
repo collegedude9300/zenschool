@@ -70,6 +70,7 @@ export default function Login() {
         </div>
         <Link href="/" passHref>
           <button className="btn btn-primary">Home</button>
+              <h2>Home</h2>
               </Link>
       </main>
     </div>

@@ -1,6 +1,6 @@
-import Head from 'next/head';
-import Link from 'next/link';
-import styles from '../styles/Home.module.css'
+import Head from 'next/Head';
+import Link from 'next/Link';
+import styles from 'next/styles'
 import { useState } from 'react';
 const validateEmail = (email) => {
   const re = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,4}$/;
@@ -68,9 +68,9 @@ export default function Login() {
               <button type="submit" className="btn btn-primary">Submit</button>
             </form>
         </div>
-        <Link href="/" passHref>
-          <button className="btn btn-primary">Home</button>
-              </Link>
+        <Link passHref href="/"> 
+          <a className="btn btn-success">Home</a>
+        </Link>
       </main>
     </div>
   );

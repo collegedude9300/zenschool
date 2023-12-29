@@ -12,7 +12,6 @@ export default function SignUp() {
   const [state, setState] = useState("");
   const [zipCode, setZipCode] = useState("");
   const [dateOfBirth, setDateOfBirth] = useState("");
-  const [error, setError] = useState("");
 
   const stateOptions = [
     { value: "AL", label: "Alabama" },
@@ -34,31 +33,24 @@ export default function SignUp() {
       validateZipCode(zipCode) &&
       validateDateOfBirth(dateOfBirth)
     ) {
-      setEmail("");
-      setName("");
-      setPhoneNumber("");
-      setAddress("");
-      setCity("");
-      setState("");
-      setZipCode("");
-      setDateOfBirth("");
-      setError("Thank you for signing up!");
+      document.getElementById("signupForm").reset();
+      alert("Thank you for signing up!");
     } else if (!validateName(name)) {
-      setError("Please enter a valid name");
+      alert("Please enter a valid name");
     } else if (!validateEmail(email)) {
-      setError("Please enter a valid email");
+      alert("Please enter a valid email");
     } else if (!validatePhoneNumber(phoneNumber)) {
-      setError("Please enter a valid phone number");
+      alert("Please enter a valid phone number");
     } else if (!validateAddress(address)) {
-      setError("Please enter a valid address");
+      alert("Please enter a valid address");
     } else if (!validateCity(city)) {
-      setError("Please enter a valid city");
+      alert("Please enter a valid city");
     } else if (!validateZipCode(zipCode)) {
-      setError("Please enter a valid zip code");
+      alert("Please enter a valid zip code");
     } else if (!validateDateOfBirth(dateOfBirth)) {
-      setError("Please enter a valid date of birth");
+      alert("Please enter a valid date of birth");
     } else {
-      setError("Error");
+      alert("Error");
     }
   };
 
@@ -107,7 +99,6 @@ export default function SignUp() {
       return false;
     }
   };
-
   return (
     <div className={styles.container}>
       <Head>
@@ -117,7 +108,6 @@ export default function SignUp() {
       </Head>
       <main className={styles.main}>
         <h1 className={styles.title}>Sign Up</h1>
-        {error && <p className={styles.error}>{error}</p>}
         <form id="signupForm" onSubmit={handleSubmit}>
           <div className="form-group">
             <label htmlFor="name">Full Name</label>
@@ -224,7 +214,7 @@ export default function SignUp() {
         </form>
         <Link href="/" passHref>
           <button className="btn btn-primary">Home</button>
-        </Link>
+              </Link>
       </main>
     </div>
   );

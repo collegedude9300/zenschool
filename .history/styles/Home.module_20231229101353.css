@@ -41,6 +41,9 @@
   align-items: center;
   background-color: #ffc400;
 }
+.email-error{
+  color: red;
+}
 .footer {
   display: flex;
   flex: 1;
